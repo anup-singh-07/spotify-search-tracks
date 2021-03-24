@@ -1,3 +1,5 @@
+This is an application where user can search for a tracks(album, playlist, artist) from spotify.
+To run this application download the file and in cmd go to the location where this project is located and then run npm start.
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
