@@ -1,0 +1,18 @@
+import * as actionTypes from '../actions/actionTypes.js';
+
+const artistsReducer = (state = {}, action) => {
+  const { artists } = action;
+  switch (action.type) {
+    case actionTypes.SET_ARTISTS:
+      return artists;
+    case actionTypes.ADD_ARTISTS:
+      return {
+        ...state,
+        next: artists.next,
+        items: [...state.items, ...artists.items]
+      };
+    default:
+      return state;
+  }
+};
+export default artistsReducer;
